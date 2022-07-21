@@ -1,14 +1,71 @@
 
 * {
-  margin: 0 auto;
-  padding: 0 auto ;
+  margin: 0px ;
+  padding: 0px  ;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
+  
+}
+.container {
+  text-align: center;
+  margin: 0 center;
+}
+/*CSS for the body */
+.index {
+  
+  font-family: 'GT Walsheim',Arial,sans-serif;
+  background-image: url(../img/fondoIndex.jpg);
+}
+ /*CSS for index */
+
+.header{ 
+  display:block;
+  margin: 15px 10px 30px 10px;
+  background-color: rgb(99, 195, 26);
+  border-radius: 20px;
+}
+.header h1 {
+  display: inline-block;
+  padding: 10px 10px 17px 10px;
+  margin-right: 50px;
+  margin-left: 30px; 
 }
 
+
+.navbar ul{
+  display: inline-block;
+  background-color: rgb(117,8,58,90%);
+  padding: 2px 2px 2px 2px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight:bold;
+}
+.navbar .navbar-center li{
+  
+  display: inline-block;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-left: 105px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+.navbar a{
+  color:rgb(254,249,238,90%) ;
+  text-decoration: none;
+}
+.navbar .navbar-right {
+  display: inline-block;
+  margin-left: 170px;
+  list-style: none;
+  padding: 5px 25px 5px 25px;
+  color: white;
+}
+
+/* CSS for login */
 .login {
   background: #432225;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 
@@ -38,7 +95,7 @@
 .login-form .input-field input {
   font-size: 16px;
   display: block;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Arial', sans-serif;
   width: 100%;
   padding: 10px 1px;
   border: 0;
