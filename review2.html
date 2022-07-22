@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <article>
+            Buenas Bruno como andas!
+
+            Revisé tu desafío, en general el uso de css es correcto, usando las propiedades requeridas y clases, aunque
+            te hago algunas observaciones:
+
+            NAV LOG IN -> El boton de log in no debería ir dentro de una ul si es que es un unico elemento (por tanto no
+            <!-- es una lista). Podrías dejar solo el 'a' (o ponerlo en otro contenedor, un div o span por ej) Para redefinir -->
+
+            HEADER -> Es recomendado que repitas el header en todas las paginas <p>TO DO</p>
+
+            H1 -> El H1 del header lo pondría afuera de la etiqueta nav, ya que no es parte de la lista de navegacion.  
+
+            FOOTER -> La clase del footer la llamaste login-footer , sin embargo es el mismo en todas las paginas.
+            Quizas mas intuitivo seria ponerle de clase 'footer' (similar a como hiciste con el header)
+
+            CLASES -> Recomiendo usar nomenclatura BEM (block element modifier) como mostro el profe. Si bien no esta
+            mal como nombraste las clases, para hacer buen uso de bem, deberias usar el __ (doble guion bajo) para
+            separar block de element (una imagen que ejemplifica lo que digo
+            https://miro.medium.com/max/1400/1*9wdJ8lHIemMO5NKqSBCc7A.png)). Entonces por ejemplo la clase
+            'navbar-right' podria llamarse 'navbar__right'.
+
+            Esto es recomendacion nada mas, para dar uso de BEM como vimos en clase
+
+            Te recomiendo prestar atencion a los puntos indicados para ir ordenando mejor tanto el html/css en vista al
+            proyecto final. Buen trabajo, aprobado!
+        </article>
+    </section>
+</body>
+
+</html>
