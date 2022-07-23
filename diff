@@ -1,0 +1,32 @@
+[33mcommit e4b9c036aade84844e2700a179c2b683eedeb1be[m[33m ([m[1;36mHEAD -> [m[1;32mReviewFixing[m[33m, [m[1;31morigin/ReviewFixing[m[33m)[m
+Author: brunoRittatore <brunogro96@hotmail.com>
+Date:   Thu Jul 21 22:53:00 2022 -0300
+
+    Fix in progress
+
+[33mcommit eaf1eb0917c5f4db744f28e000db9eb9169dd79e[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: db98455 91fa79c
+Author: Bruno Rittatore <77300165+BrunoRittatore@users.noreply.github.com>
+Date:   Thu Jul 21 17:44:16 2022 -0300
+
+    Merge pull request #1 from BrunoRittatore/BoxModeling
+    
+    Changes for BEM delivery N°2
+
+[33mcommit 91fa79cfa8ca75a4ee71f15d0be78f72ea339fd7[m[33m ([m[1;31morigin/BoxModeling[m[33m, [m[1;32mBoxModeling[m[33m)[m
+Author: brunoRittatore <brunogro96@hotmail.com>
+Date:   Thu Jul 21 17:41:44 2022 -0300
+
+    Changes for BEM delivery N°2
+
+[33mcommit db98455ef61baf5ad9132bbcd4612b2a9f2916de[m
+Author: brunoRittatore <brunogro96@hotmail.com>
+Date:   Wed Jul 20 15:48:32 2022 -0300
+
+    First Commit
+
+[33mcommit 0318df222706fa4a76a02b96edf95e5cc4ce2408[m
+Author: Bruno Rittatore <77300165+BrunoRittatore@users.noreply.github.com>
+Date:   Wed Jul 20 15:30:13 2022 -0300
+
+    Initial commit

@@ -1,7 +1,7 @@
 
 * {
-  margin: 0px ;
-  padding: 0px  ;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   
 }
@@ -10,57 +10,122 @@
   margin: 0 center;
 }
 /*CSS for the body */
-.index {
+body {
   
   font-family: 'GT Walsheim',Arial,sans-serif;
   background-image: url(../img/fondoIndex.jpg);
+  margin: 10px 10px 10px 10px;
+  
 }
  /*CSS for index */
-
 .header{ 
-  display:block;
+  
   margin: 15px 10px 30px 10px;
   background-color: rgb(99, 195, 26);
   border-radius: 20px;
 }
 .header h1 {
   display: inline-block;
+  font-weight: 100;
   padding: 10px 10px 17px 10px;
-  margin-right: 50px;
-  margin-left: 30px; 
+  margin-right: 10rem;
+  margin-left: 30px;
 }
 
-
-.navbar ul{
+.header__nav {
   display: inline-block;
-  background-color: rgb(117,8,58,90%);
+  background-color: rgba(119, 8, 60, 0.9);
   padding: 2px 2px 2px 2px;
   border-radius: 20px;
   font-family: sans-serif;
   font-size: 15px;
   font-weight:bold;
-}
-.navbar .navbar-center li{
-  
-  display: inline-block;
-  padding-left: 22px;
-  padding-right: 22px;
-  margin-left: 105px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   border-radius: 20px;
+  text-decoration: none;
+  
 }
-.navbar a{
-  color:rgb(254,249,238,90%) ;
+.header__ul li{
+  display: inline-block;
+  margin-inline: 2rem;
+  padding: 5px 30px 5px 30px;
+  cursor: pointer;
+  
+}
+.header a{
+  color:white;
   text-decoration: none;
 }
-.navbar .navbar-right {
+
+ .header__login{
   display: inline-block;
-  margin-left: 170px;
-  list-style: none;
-  padding: 5px 25px 5px 25px;
-  color: white;
+  background-color: rgb(119, 8, 60, 0.9);
+  padding: 6px 8px 6px 8px;
+  margin-left: 20rem;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight:bold;
+  border-radius: 20px;
 }
+
+/* CSS for Slideshow */
+
+.carrusel{
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  height:510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+ .carrusel__wrapper {
+ width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+  
+} 
+.carrusel li {
+  text-decoration: none;
+}
+.carrusel__img img {
+  text-decoration: none;
+  display:block;
+  height: 510px;
+  width: 728px;
+  object-fit: cover;
+  object-position: center;
+  float: left;
+
+}
+
+.slide:nth-child(1) {
+  background: #D93B65;
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+
 
 /* CSS for login */
 .login {
@@ -77,7 +142,7 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   border-radius: 4px;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
 }
@@ -166,7 +231,7 @@
 .login-form .action button:nth-child(2):hover {
   background: #3c4d6d;
 }
-.login-footer {
+.footer {
   position: absolute; 
   left: 0;
   padding: 10px 10px 10px 10px;
