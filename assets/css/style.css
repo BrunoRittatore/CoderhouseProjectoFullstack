@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,42 +13,50 @@
 /*CSS for the body */
 body {
   
-  font-family: 'GT Walsheim',Arial,sans-serif;
-  background-image: url(../img/fondoIndex.jpg);
+  font-family: 'Quicksand', sans-serif;
+
+  background-image: url(../img/backgroud2.jpg);
   margin: 10px 10px 10px 10px;
-  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:center;
 }
  /*CSS for index */
 .header{ 
   
   margin: 15px 10px 30px 10px;
-  background-color: rgb(99, 195, 26);
+  
   border-radius: 20px;
 }
 .header h1 {
   display: inline-block;
-  font-weight: 100;
-  padding: 10px 10px 17px 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 3px;
+  padding: 17px 10px 17px 10px;
   margin-right: 10rem;
   margin-left: 30px;
 }
 
 .header__nav {
   display: inline-block;
-  background-color: rgba(119, 8, 60, 0.9);
+  margin-left: 5rem;
+  background-color: rgb(229, 152, 128,50%);
   padding: 2px 2px 2px 2px;
   border-radius: 20px;
   font-family: sans-serif;
-  font-size: 15px;
-  font-weight:bold;
+  font-size: 20px;
   border-radius: 20px;
   text-decoration: none;
   
 }
 .header__ul li{
   display: inline-block;
+  
   margin-inline: 2rem;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 20px 5px 20px;
   cursor: pointer;
   
 }
@@ -58,11 +67,11 @@ body {
 
  .header__login{
   display: inline-block;
-  background-color: rgb(119, 8, 60, 0.9);
-  padding: 6px 8px 6px 8px;
-  margin-left: 20rem;
-  font-family: sans-serif;
-  font-size: 15px;
+  background-color: rgb(229, 152, 128,50%);
+  padding: 6px 10px 6px 10px;
+  margin-left: 15rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
   font-weight:bold;
   border-radius: 20px;
 }
@@ -80,7 +89,7 @@ body {
 
  .carrusel__wrapper {
  width: 2912px;
-  -webkit-animation: slide 18s ease infinite;
+ -webkit-animation: slide 18s ease infinite;
   
 } 
 .carrusel li {
@@ -88,12 +97,15 @@ body {
 }
 .carrusel__img img {
   text-decoration: none;
-  display:block;
+  display:inline-block;
+
   height: 510px;
   width: 728px;
-  object-fit: cover;
+  margin: auto;
+  object-fit: cover; 
   object-position: center;
   float: left;
+  border-radius: 3%;
 
 }
 
@@ -125,12 +137,13 @@ body {
   90% {margin-left: -2184px;}
 }
 
-
-
 /* CSS for login */
 .login {
-  background: #432225;
-  font-family: 'Arial', sans-serif;
+  background-image: url(../img/loginImg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -207,7 +220,7 @@ body {
   width: 100%;
   border: none;
   padding: 18px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   cursor: pointer;
   text-transform: uppercase;
   background: #e8e9ec;
@@ -234,11 +247,78 @@ body {
 .footer {
   position: absolute; 
   left: 0;
-  padding: 10px 10px 10px 10px;
-  margin-top: 10px;
+   padding: 10px 10px 10px 10px;
+  margin-top: 10px; 
   bottom: 0;
   width: 100%;
-  background-color: rgb(239, 109, 202);
-  color: white;
+  text-decoration: none;
+  background-color: rgb(102, 44,31,80%);
+  
   text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+/*CSS for recipes */
+.receipes_title {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(239, 204, 191,90%);
+  border-radius: 20px;
+  margin-left: 45%;
+  margin-right: 45%;
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+
+}
+.column {
+  float:left;
+  width: 25%;
+  padding: 0 10px;
+}
+.row {
+  margin-left: 15% ;
+  margin-right: 15%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  text-align: center;
+  background-color: rgb(239, 204, 191,90%);
+  border-radius: 20px;
+  font-weight: 600;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  
+}
+.card img{
+  background-position: center;
+  border-radius: 20px;
+  opacity: 80%;
+  cursor: pointer;
+}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
