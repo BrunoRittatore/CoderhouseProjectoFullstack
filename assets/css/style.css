@@ -4,17 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 .container {
+  
   text-align: center;
   margin: 0 center;
 }
 /*CSS for the body */
 body {
-  
   font-family: 'Quicksand', sans-serif;
-
   background-image: url(../img/backgroud2.jpg);
   margin: 10px 10px 10px 10px;
   background-size: 100%;
@@ -23,9 +21,7 @@ body {
 }
  /*CSS for index */
 .header{ 
-  
   margin: 15px 10px 30px 10px;
-  
   border-radius: 20px;
 }
 .header h1 {
@@ -46,18 +42,20 @@ body {
   background-color: rgb(229, 152, 128,50%);
   padding: 2px 2px 2px 2px;
   border-radius: 20px;
-  font-family: sans-serif;
   font-size: 20px;
+  font-weight: 500;
   border-radius: 20px;
   text-decoration: none;
   
 }
 .header__ul li{
   display: inline-block;
-  
   margin-inline: 2rem;
   padding: 5px 20px 5px 20px;
   cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight:bold;
   
 }
 .header a{
@@ -68,11 +66,11 @@ body {
  .header__login{
   display: inline-block;
   background-color: rgb(229, 152, 128,50%);
-  padding: 6px 10px 6px 10px;
-  margin-left: 15rem;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   font-weight:bold;
+  padding: 6px 10px 6px 10px;
+  margin-left: 15rem;
   border-radius: 20px;
 }
 
@@ -321,4 +319,30 @@ body {
     display: block;
     margin-bottom: 20px;
   }
+}
+/* CSS for about us */
+.aboutUs{
+  text-decoration: none;
+  color: white;
+  padding: 10px 0px 20px 0px;
+}
+.aboutUs a{
+  text-decoration: none;
+  color:white;
+}
+
+/* CSS for Contact Us */
+.contactForm {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 3rem 3rem; 
 }
