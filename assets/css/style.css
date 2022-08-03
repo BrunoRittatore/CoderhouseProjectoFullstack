@@ -1,88 +1,145 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*Variables*/
+:root{
+  /* Pallete */
+  --primary :rgb(229, 152, 128,50%);
+  --secondary: rgb(102, 44,31,80%);
+  --alternative :rgb(229, 152, 128,90%);;
+  --cards : rgb(239, 204, 191,90%);
+
+  /* Spacings */
+  --spacing-lg : 40px;
+  --spacing-l: 30px;
+  --spacing-m: 20px;
+  --spacing-s :10px;
+  --spacing-xs: 5px;
+
+  /* Sizes */
+  --size-lg :45px;
+  --size-m:30px;
+  --size-s:20px;
+  --size-ss:15px;
+  --size-xs:10px;
+
+  /* Font Family */
+  --text-base :'Quicksand', sans-serif;
 }
-.container {
+
+* {
+  margin: 0 ;
+  padding: 0;
+  border: none;
   
-  text-align: center;
-  margin: 0 center;
+}
+html{
+  font-size: 62.5%;
+}
+img{
+  width: 100%;
+}
+/* Con esto el carrusel funciona perfecto sin aparecer los puntos*/
+ul{
+  list-style-type: none;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /*CSS for the body */
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--text-base);
   background-image: url(../img/backgroud2.jpg);
   margin: 10px 10px 10px 10px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position:center;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+
 }
+
  /*CSS for index */
 .header{ 
-  margin: 15px 10px 30px 10px;
-  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .header h1 {
-  display: inline-block;
   color: white;
   font-weight: 500;
   font-size: 45px;
   font-weight: bold;
   margin-top: 3px;
-  padding: 17px 10px 17px 10px;
   margin-right: 10rem;
-  margin-left: 30px;
+  
 }
 
 .header__nav {
-  display: inline-block;
-  margin-left: 5rem;
-  background-color: rgb(229, 152, 128,50%);
-  padding: 2px 2px 2px 2px;
+  width: fit-content;
+  height: fit-content;
+  padding: 6px;
+  background-color: var(--primary);
   border-radius: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 20px;
-  text-decoration: none;
-  
-}
-.header__ul li{
-  display: inline-block;
-  margin-inline: 2rem;
-  padding: 5px 20px 5px 20px;
-  cursor: pointer;
-  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   font-weight:bold;
-  
+}
+.header__nav li {
+  font-weight: bold;
+  font-size: var(--size-s);
+  margin-inline: var(--spacing-lg);
+}
+.header__ul {
+  display: flex;
 }
 .header a{
   color:white;
   text-decoration: none;
 }
 
- .header__login{
-  display: inline-block;
-  background-color: rgb(229, 152, 128,50%);
-  font-family: 'Quicksand', sans-serif;
+.header__login{
+  background-color:var(--primary);
   font-size: 20px;
   font-weight:bold;
   padding: 6px 10px 6px 10px;
-  margin-left: 15rem;
+  margin-left: 12rem;
   border-radius: 20px;
 }
 
-/* CSS for Slideshow */
+.header__login a:hover{
+  
+  transition-duration: 0.3s;
+  background-color: var(--alternative);
+  border-radius: 15px;
+  padding: 3px;
+}
+.header__ul li:hover{
+  transition-duration: 0.3s;
+  background-color: var(--alternative);
+  border-radius: 15px;
+  padding: 3px;
+}
 
+/* CSS for Slideshow */
+#carruselIndex {
+  display: flex;
+  flex-wrap: wrap;
+}
 .carrusel{
+  display:flex;
   position: relative;
   text-align: center;
   overflow: hidden;
+  align-items: center;
   height:510px;
   width: 728px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
  .carrusel__wrapper {
@@ -243,16 +300,14 @@ body {
   background: #3c4d6d;
 }
 .footer {
-  position: absolute; 
-  left: 0;
-   padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 0px;
   margin-top: 10px; 
-  bottom: 0;
   width: 100%;
   text-decoration: none;
-  background-color: rgb(102, 44,31,80%);
-  
+  background-color: var(--secondary);
+  font-size: var(--size-s);
   text-align: center;
+  margin-top: auto;
 }
 .footer a{
   text-decoration: none;
@@ -261,6 +316,14 @@ body {
 }
 
 /*CSS for recipes */
+
+ .receipes{
+  margin: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+
 .receipes_title {
   text-align: center;
   margin-top: 5rem;
@@ -276,41 +339,23 @@ body {
   font-size: 25px;
 
 }
-.column {
-  float:left;
-  width: 25%;
-  padding: 0 10px;
-}
-.row {
-  margin-left: 15% ;
-  margin-right: 15%;
-  padding-left: 10px;
-  padding-right: 10px;
-  
-}
-
-.row::after{
-  content: "";
-  display: table;
-  clear: both;
-  
-}
 .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 1px;
+  width:180px;
+  
   text-align: center;
-  background-color: rgb(239, 204, 191,90%);
+  background-color: var(--cards);
   border-radius: 20px;
-  font-weight: 600;
-  padding-top: 2px;
-  padding-bottom: 5px;
+  font-size: var(--size-ss);
+  padding-bottom: var(--size-xs);
   
 }
-.card img{
-  background-position: center;
+.card__body img{
   border-radius: 20px;
   opacity: 80%;
   cursor: pointer;
+  height: 12rem;
+  width: 100%;
+  
 }
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
