@@ -7,10 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <header class="header">
     <h1>Moraleja</h1>
     <div class="header__nav">
@@ -28,10 +33,10 @@
     </div>
   </header>
   
-  <section class="container">
+  <section class="container " data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="300">
     <h3 class="receipes_title">Tortas</h3>
-    <div class="receipes">
-      <div class="card">
+    <div class="receipes ">
+      <div class="card card-custom  ">
         <div class="card__body">
           <img src="./assets/img/cheescakeimg.jpg" alt="Denim Jeans" style="width:100%">
           <div>
@@ -41,7 +46,7 @@
           <p>Ingredientes</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card card-custom  ">
         <div class="card__body">
           <img src="./assets/img/chocolate cake.jpg" alt="Denim Jeans" style="width:100%">
           <h3>Torta de Chocolate</h3>
@@ -49,7 +54,7 @@
           <p>Ingredientes</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card card-custom ">
         <div class="card__body">
           <img src="./assets/img/applecake.jpg" alt="Denim Jeans" style="width:100%">
           <h3>Torta de Manzana</h3>
@@ -57,7 +62,7 @@
           <p>Ingredientes</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card card-custom  ">
         <div class="card__body">
           <img src="./assets/img/selvanegra.jpg" alt="Denim Jeans" style="width:100%">
           <h3>Selva Negra</h3>
@@ -68,10 +73,10 @@
     </div>
   </section>
   
-    <section class="container">
+    <section class="container"data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="500">
       <h3 class="receipes_title">Galletas</h3>
       <div class="receipes">
-        <div class="card">
+        <div class="card card-custom ">
           <div class="card__body">
             <img src="./assets/img/cheescakeimg.jpg" alt="Denim Jeans" style="width:100%">
             <div>
@@ -81,7 +86,7 @@
             <p>Ingredientes</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card card-custom ">
           <div class="card__body">
             <img src="./assets/img/chocolate cake.jpg" alt="Denim Jeans" style="width:100%">
             <h3>Torta de Chocolate</h3>
@@ -89,7 +94,7 @@
             <p>Ingredientes</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card card-custom ">
           <div class="card__body">
             <img src="./assets/img/applecake.jpg" alt="Denim Jeans" style="width:100%">
             <h3>Torta de Manzana</h3>
@@ -97,7 +102,7 @@
             <p>Ingredientes</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card card-custom ">
           <div class="card__body">
             <img src="./assets/img/selvanegra.jpg" alt="Denim Jeans" style="width:100%">
             <h3>Selva Negra</h3>

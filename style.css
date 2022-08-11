@@ -52,7 +52,7 @@ ul{
 /*CSS for the body */
 body {
   font-family: var(--text-base);
-  background-image: url(../img/backgroud2.jpg);
+  background-image: url(./assets/img/backgroud2.jpg);
   margin: 0px 10px 0px 10px;
   background-size:cover;
   background-repeat: no-repeat;
@@ -378,7 +378,15 @@ body {
   border-radius: 20px;
   font-size: var(--size-ss);
   padding-bottom: var(--size-xs);
+  backdrop-filter: blur(20px);
+    transform: perspective(500px);
+    transform-style: preserve-3d;
   
+}
+.card-custom {
+  border-radius: 2em;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 .card__body img{
   border-radius: 20px;

@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <header class="header">
-        <h1>Moraleja</h1>
-        <nav class="header__nav">
+        <h1 data-aos="fade-right" data-aos-duration="6000" data-aos-delay="500">Moraleja</h1>
+        <nav class="header__nav" data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="1000">
             <ul class="header__ul">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./receipes.html">Recepies</a></li>
@@ -23,7 +28,7 @@
 
             </ul>
         </nav>
-        <nav class="header__login">
+        <nav class="header__login" data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="900">
             <a href="./login.html">Log In / Sign Up</a>
         </nav>
     </header>
@@ -39,7 +44,7 @@
                 </ul>
             </div>
         </section>
-        <section  class="container">
+        <section  class="container" data-aos="fade-in" data-aos-duration="6000" data-aos-delay="500">
             <section class=" grid__review">
                 <img src="./assets/img/cheescakeimg.jpg" alt="Cheescake">
                 <div class="review-section">
