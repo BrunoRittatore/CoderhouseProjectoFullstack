@@ -44,12 +44,13 @@ ul{
   
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+a {
+  color: white;
+  text-decoration: none;
 }
-/*CSS for the body */
+.container-xxl {
+  max-width: 1400px;
+}
 body {
   font-family: var(--text-base);
   background-image: url(./assets/img/backgroud2.jpg);
@@ -57,64 +58,71 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
   background-position:center;
-  display: grid;
-  height: 100%;
-  
 }
 
  /*CSS for index */
-.header{ 
+#header{ 
   display: flex;
+  color: white;
+  font-family: var(--text-base);
   justify-content: space-around;
   margin-bottom: 6rem;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
-.header h1 {
+#header h1 {
+  
   color: white;
   font-weight: 500;
   font-size: 45px;
   font-weight: bold;
   margin-top: 3px;
-  margin-right: 10rem;
+  
   
 }
 
 .header__nav {
   width: fit-content;
   height: fit-content;
-  padding: 6px;
+  
   background-color: var(--primary);
-  border-radius: 20px;
+  
   font-size: 20px;
   font-weight:bold;
 }
-.header__nav li {
+
+.header__ul {
+  background-color: var(--primary);
+  display: flex;
+  padding: 6px; 
+  border-radius: 20px;
   font-weight: bold;
+  justify-content:space-around ;
   font-size: var(--size-s);
   margin-inline: var(--spacing-lg);
 }
-.header__ul {
-  display: flex;
-}
-.header a{
-  color:white;
+.header__ul a{
+  color: white;
   text-decoration: none;
 }
 
-.header__login{
+#header__login a{
   background-color:var(--primary);
   font-size: 20px;
   font-weight:bold;
-  padding: 6px 10px 6px 10px;
-  margin-left: 12rem;
+  padding: 6px;
+  color: white;
+  text-decoration: none;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 
-.header__login a:hover{
+#header__login a:hover{
   
   transition-duration: 0.3s;
   background-color: var(--alternative);
+  color: white;
   border-radius: 15px;
   padding: 3px;
 }
@@ -122,13 +130,23 @@ body {
   transition-duration: 0.3s;
   background-color: var(--alternative);
   border-radius: 15px;
-  padding: 3px;
+  padding: 9px;
 }
 
 /* CSS for Slideshow */
 #carruselIndex {
   display: flex;
   flex-wrap: wrap;
+}
+
+.overlay-image{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
 }
 .carrusel{
   display:flex;
