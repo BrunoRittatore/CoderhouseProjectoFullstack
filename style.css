@@ -5,7 +5,7 @@
   /* Pallete */
   --primary :rgb(229, 152, 128,50%);
   --secondary: rgb(102, 44,31,80%);
-  --alternative :rgb(229, 152, 128,90%);;
+  --alternative :rgb(229, 152, 128,70%);;
   --cards : rgb(239, 204, 191,90%);
 
   /* Spacings */
@@ -58,12 +58,11 @@ body {
   background-repeat: no-repeat;
   background-position:center;
   display: grid;
-  height: 100%;
-  
 }
 
  /*CSS for index */
 .header{ 
+  
   display: flex;
   justify-content: space-around;
   margin-bottom: 6rem;
@@ -196,10 +195,9 @@ body {
 .grid__review {
   display: grid;
   margin: 5rem; 
-  grid-template-columns: 2fr 2fr auto;
+  grid-template-columns: auto auto;
   gap: 10rem;
   align-items: center;
-  grid-template-areas: 'img img img review review review ';
   padding-top: var(--spacing-lg);
   justify-content: center;
   
@@ -220,11 +218,12 @@ body {
 }
 /* CSS for login */
 .login {
-  background-image: url(../img/loginImg2.jpg);
+  background-image: url(/assets/img/loginImg2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
   font-family: 'Quicksand', sans-serif;
+  min-height: 100%;
 }
 
 
@@ -326,6 +325,9 @@ body {
   background: #3c4d6d;
 }
 .footer {
+  display: flex;
+  justify-content: center;
+  justify-self: end;
   padding: 10px 0px 10px 0px;
   margin-top: 10px;
   margin-bottom: 5px; 
@@ -406,29 +408,175 @@ body {
 }
 /* CSS for about us */
 .aboutUs{
+  display: grid;
+  grid-template-columns: auto auto;
   text-decoration: none;
   color: white;
   padding: 10px 0px 20px 0px;
 }
+.aboutUs {
+  text-decoration: none;
+  font-size: var(--size-s);
+  color:white;
+}
+.aboutUs img {
+  border-radius: 20px;
+  max-width: 50%;
+  justify-self: end;
+  height: auto;
+}
 .aboutUs a{
   text-decoration: none;
-  color:white;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
 }
 
 /* CSS for Contact Us */
-.contactForm {
-  text-decoration: none;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
+
+.contact{
+  background-image: url(/assets/img/loginImg.jpg);
+  background-blend-mode: darken;
 }
 
-.contact h3 {
+#fcf-form {
+  display:block;
+}
+
+.fcf-body {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 3;
   color: white;
-  font-weight: bold;
-  font-size: 40px;
-  margin: 3rem 3rem; 
+  text-align: left;
+  background-color: var(--alternative);
+  padding: 30px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  min-width: 400px;
+}
+
+.fcf-form-group {
+  margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  
+  align-items: stretch;
+  width: 100%;
+}
+
+.fcf-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid black;
+  outline: none;
+  border-radius:20px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+  border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+  height: auto;
+}
+
+textarea.fcf-form-control {
+  font-family: -apple-system, Arial, sans-serif;
+  height: auto;
+}
+
+label.fcf-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #545b62;
+}
+
+.fcf-credit a {
+  color: #545b62;
+  text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fcf-btn {
+      transition: none;
+  }
+}
+
+.fcf-btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+  color: #fff;
+  background-color: var(--secondary);
+  border-color: white;
+}
+
+.fcf-btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: white;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+  display: block;
+  width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+  margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+  width: 100%;
 }
 
 @media (max-width: 1400px) {

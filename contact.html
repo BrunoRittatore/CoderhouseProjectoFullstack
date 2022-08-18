@@ -10,7 +10,8 @@
 
 </head>
 
-<body class="contact">
+<body class="contact" >
+    <main>
     <header class="header">
         <h1>Moraleja</h1>
         <div class="header__nav">
@@ -28,26 +29,48 @@
     </header>
 
     <section class="container">
-        <h3>Contact us</h3>
-        <form class="contactForm">
-            <label for="Name" >Your name</label>
-            <div>
-                <input type="text" id="Name" name="Name" required>
-            </div>
-            <div>
-                <label for="Email">Your email address</label>
-                <div>
-                    <input type="email" id="Email" name="Email" required>
-                </div>
-                <div>
-                    <label for="Message">Your message</label>
-                    <div>
-                        <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+
+        <div class="fcf-body">
+
+            <div id="fcf-form">
+                <h3 class="fcf-h3">Contact us</h3>
+
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
                     </div>
-                </div>                    <button type="submit">Send</button>
-                </div>
-        </form>
+
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                                required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button"
+                            class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+    <section class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, inventore cupiditate quas ex adipisci fuga quibusdam minus modi alias nihil dolore. Sunt illum nesciunt cupiditate, odit numquam tenetur delectus cum.
+    </section>
+</main>
     <footer class="footer">
         <a href="./index.html">HOME</a>
     </footer>
