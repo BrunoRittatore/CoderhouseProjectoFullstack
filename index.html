@@ -6,18 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-    <header class="header">
-        <h1 data-aos="fade-right" data-aos-duration="6000" data-aos-delay="500">Moraleja</h1>
+
+    <header>
+        <!-- <h1 data-aos="fade-right" data-aos-duration="6000" data-aos-delay="500">Moraleja</h1>
         <nav class="header__nav" data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="1000">
             <ul class="header__ul">
                 <li><a href="./index.html">Home</a></li>
@@ -30,9 +28,33 @@
         </nav>
         <nav class="header__login" data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="900">
             <a href="./login.html">Log In / Sign Up</a>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <h1 data-aos="fade-right" data-aos-duration="6000" data-aos-delay="500">Moraleja</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav header__ul">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./receipes.html">Recepies</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./forum.html">Forum</a></li>
+                    </div>
+                    <nav class="navbar-nav header__login ">
+                        <a href="./login.html">Log In / Sign Up</a>
+                    </nav>
+
+                </div>
+            </div>
         </nav>
     </header>
     <main>
+        <!-- Carrusel Section-->
         <section class="container" id="carruselIndex">
             <div class="carrusel">
                 <ul class="carrusel__wrapper">
@@ -44,34 +66,91 @@
                 </ul>
             </div>
         </section>
-        <section  class="container" data-aos="fade-in" data-aos-duration="6000" data-aos-delay="500">
-            <section class=" grid__review">
-                <img src="./assets/img/cheescakeimg.jpg" alt="Cheescake">
-                <div class="review-section">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore harum quo repellendus
-                        laudantium
-                        perferendis ut, ratione, alias nam in rem numquam expedita est tenetur odio maxime facere nemo,
-                        pariatur
-                        consectetur.</p>
-                </div>
-            </section>
-            <section class=" grid__review">
-                <div class="review-section">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore harum quo repellendus
-                        laudantium
-                        perferendis ut, ratione, alias nam in rem numquam expedita est tenetur odio maxime facere nemo,
-                        pariatur
-                        consectetur.</p>
-                </div>
-                <img src="./assets/img/cheescakeimg.jpg" alt="Cheescake">
-            </section>
-        </section>
-        
-    </main>
 
+        <!-- End of Carrusel section-->
+
+        <!--Card Section -->
+        <section class="container">
+        <div class="card  card__home mb-3 my-5" style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./assets/img/cheescakeimg.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card__home mb-3 my-5" style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                   
+                  </div>
+                  <p class="card-text align-items-end"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              <div class="col-md-4">
+                <img src="./assets/img/cheescakeimg.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--           
+        <section class="container-xl" data-aos="fade-in" data-aos-duration="6000" data-aos-delay="500">
+            <section class=" grid__review">
+                
+                <div class="review-section">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore harum quo repellendus
+                        laudantium
+                        perferendis ut, ratione, alias nam in rem numquam expedita est tenetur odio maxime facere nemo,
+                        pariatur
+                        consectetur.</p>
+                </div>
+            </section>
+            <section class=" grid__review">
+                <div class="review-section">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore harum quo repellendus
+                        laudantium
+                        perferendis ut, ratione, alias nam in rem numquam expedita est tenetur odio maxime facere nemo,
+                        pariatur
+                        consectetur.</p>
+                </div>
+                <img src="./assets/img/cheescakeimg.jpg" alt="Cheescake">
+            </section>
+        </section> -->
+        <section class="mt-5 my-5 container__aboutUs">
+            <div class="container ">
+                <div class="aboutUs">
+                    <div>
+                        <h2>About Us</h2>
+                        <br>
+                        <p>Moraleja es un espacio creado en el 2016 por un grupo de jovenes estudiantes que compartian
+                            la pasion por la cocina.
+                            <br>Idearon este espacio para que las personas que tienen su misma pasio se sientas libres
+                            de subir sus creaciones culinarias en un ambiente
+                            donde puedan mostrarlo ante pares que sientan lo mismo.
+                        </p>
+                    </div>
+                    <img class="aboutUs__img" style="max-width: 60%;" src="/assets/img/aboutUs1.jpg" alt="AboutUs">
+                </div>
+            </div>
+
+        </section>
+    </main>
     <footer class="footer">
         <a href="./index.html">HOME</a>
     </footer>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
