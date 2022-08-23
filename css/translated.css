@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+/*Variables */
+/* Pallete */
+/* Spacings */
+/* Sizes */
+/* Font Family */
+* {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+html {
+  font-size: 62.5%; }
+
+img {
+  width: 100%; }
+
+/* Con esto el carrusel funciona perfecto sin aparecer los puntos*/
+ul {
+  list-style-type: none; }
+
+/*CSS for the body */
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: url(/assets/img/backgroud2.jpg);
+  margin: 0px 10px 0px 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid; }

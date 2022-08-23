@@ -44,11 +44,6 @@ ul{
   
 }
 
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-} */
 /*CSS for the body */
 body {
   font-family: var(--text-base);
