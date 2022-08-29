@@ -1,0 +1,105 @@
+/* HOME PAGE */
+
+/* CSS for Slideshow */
+#carruselIndex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .carrusel{
+    display:flex;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    height:510px;
+    width: 728px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+        &__wrapper {
+            width: 2912px;
+            -webkit-animation: slide 18s ease infinite;
+
+        }
+        & li {
+            text-decoration: none;
+        }
+        &__img img {
+            text-decoration: none;
+            display:inline-block;
+            height: 510px;
+            width: 728px;
+            margin: auto;
+            object-fit: cover; 
+            object-position: center;
+            float: left;
+            border-radius: 3%;
+          
+        }
+
+  }
+    
+  @-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    70% {margin-left: -1456px;}
+    80% {margin-left: -2184px;}
+    90% {margin-left: -2184px;}
+  }
+  
+  /* CSS for section review Index */
+  
+  .grid__review {
+    display: grid;
+    margin: 5rem; 
+    grid-template-columns: auto auto;
+    gap: 10rem;
+    align-items: center;
+    padding-top: var(--spacing-lg);
+    justify-content: center;
+
+        & img{
+            border-radius: 20px;
+            gap: 2rem;
+            max-width: 380px;
+            max-height: 250px;
+        }
+  }
+  .card__home{
+    /* width:180px; */
+    text-align: center;
+    background-color: var(--cards);
+    border-radius: 20px;
+    font-size: var(--size-ss);
+    padding-bottom: var(--size-xs);
+    backdrop-filter: blur(20px);
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    left: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  /* Css for About Us Home */
+  .container__aboutUs{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  .aboutUs {
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 50%);
+        & h2{
+            color: black;
+            font-size: var(--size-m);
+            font-weight: bolder;
+        }
+        & p {
+            color: black;
+            font-weight: 600;
+        }
+  }

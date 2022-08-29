@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+    /* MISC */
+
 @import './misc/variables';
+@import './misc/mixins';
+@import './misc/animations';
 @import './misc/normalize';
-// @import url(./misc/_normalize.scss);
-// @import url(./partials/_header.scss);
-// @import url(./partials/_footer.scss);
+
+    /* PARTIALS */
+@import './partials/header';
+@import './partials/footer';
+
+    /* VIEWS */
+@import './views/index';
+@import './views/receipes';
+@import './views/about';
+@import './views/login';
+@import './views/contact';
+
+
+

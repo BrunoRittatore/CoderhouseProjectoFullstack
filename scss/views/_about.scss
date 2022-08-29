@@ -1,0 +1,24 @@
+/* CSS for about us */
+.aboutUs{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px 20px 0px;
+    font-size: $size-s;
+        & img{
+           border-radius: 20px;
+           max-width: 50%;
+           justify-self: end;
+           height: auto;
+        }
+        & a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+          }
+
+  }
+  
+  

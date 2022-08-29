@@ -17,6 +17,11 @@ Desafio Bootstrap:
 Rediseñado Index y Receipes con bootstrap en navbar y sections
 
 
+Desafio SASS II + SEO
+Agregar un map , un mixin y un extend para modificar cualquier elemento del sitio.
+Sumar keywords, despcripción, títulos y encabezado a todas las paginas del sitio.
+Explicar en un Doc los cambios realizados en el punto anteriior : "Agreger estas keywords" , "cambie estos titulos"
+
 Fix Notes:
 
 -Comprimir todas las imagenes para mejor desempeño de carga.

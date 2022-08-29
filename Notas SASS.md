@@ -27,3 +27,71 @@ Basicamente ir encarpeta segun la conveniencia
 En el index.scss se tiene que importar mediante las rutas los archivos scss de cada vista/partial
 
 -El TRANSLATE ES UN ARCHIVO TEMPORAl , una vez que esta todo traducido al css lo que estaba en el index se puede pisar mediante el package json cambiando la ruta de destino del traslate
+
+
+
+NOTAS SASS II 
+
+las variables se nombran con $ y tienen que ser reemplazadas en todos los archivos intermedios de sass para que los tome correctamente al momento de traducir
+
+Se ve bucles 
+sintaxis :
+Para decirle a sass que quiero usar esa variable dentro del bucle utilizo el numeral
+
+@for $i from 1 trough 10 {
+
+    .col-#{$i}{
+        width: 10% * $i; 
+    }
+}
+Este codigo lo que va a hacer es que desde el col-1 va a ir variando el width
+
+Estructura de EACH
+Es similar a lo que es un map en JS 
+@each $animal in perro,zorro,guacamayo {
+    .card__img--#{animal} {
+        height :300px
+        backgroudd-image: url ('../img/..') 
+
+    }
+
+}
+
+Estructura de MAPS 
+
+$redes : (
+    twitter: white;  
+    facebook : blue;
+    send-mail : red;
+)
+Creamos un bucle para usar los valores del mapa 
+
+@each $red, $color  in $redes {
+    .btn--#{$red}{
+        background-color : $color;
+    }
+
+}
+
+
+despues se tiene que usar un map-get para llamarla desde algun atributo
+
+
+EXTEND : Se utiliza el extend para traer los estilos de una clase a otra
+
+MIXINS 
+Permiten definir estilos que pueden ser reutilizado en el proyecto, a diferencia con extend es que los mixins puede recibir argumentos , los cuales permiten producir gran variedad de stilos con un par de lineas.
+
+Declaración :
+
+@mixin sizes ($width,%height) {
+    height : $height;
+    width  : $width;
+}
+.box {
+    @include sizes(valorde width,valor height)
+}
+
+Siempre hay que completar los valores , en caso de no tener hay que poner el que trae por defecto el atributo o cambiar el tipo de mixin que se usa
+
+
