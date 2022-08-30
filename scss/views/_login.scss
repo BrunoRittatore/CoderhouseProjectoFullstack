@@ -74,10 +74,10 @@
         }
         & .action {
             display: -webkit-box;
-            display: flex;
+            @include flex-direction-row();
             -webkit-box-orient: horizontal;
             -webkit-box-direction: normal;
-            flex-direction: row;
+            
             & button {
                 width: 100%;
                 border: none;

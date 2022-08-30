@@ -32,22 +32,26 @@ body {
 
 /* PARTIALS */
 /* Inicio Header */
+.header__ul {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px; }
+
 .header h1 {
   color: white;
   font-weight: 500;
   font-size: 45px;
   font-weight: bold;
   margin-top: 3px;
-  margin-right: 10rem; }
+  margin-right: 10rem;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 .header__ul {
   display: flex;
   justify-content: space-around;
   padding: 6px;
   background-color: var(--primary);
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: bold;
   margin-left: 20rem; }
   .header__ul a {
     padding-right: 10px;
@@ -318,9 +322,9 @@ body {
   .login-form .action {
     display: -webkit-box;
     display: flex;
+    flex-direction: row;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row; }
+    -webkit-box-direction: normal; }
     .login-form .action button {
       width: 100%;
       border: none;

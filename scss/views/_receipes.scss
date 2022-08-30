@@ -15,7 +15,7 @@
   margin-bottom: 2rem;
   padding: auto;
   background-color: $cards;
-  border-radius: 20px;
+  border-radius: map-get($estilos , br );
   margin-left: 42%;
   margin-right: 42%;
   color: black;
