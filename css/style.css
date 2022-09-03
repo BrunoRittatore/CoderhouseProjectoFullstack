@@ -44,15 +44,10 @@ ul{
   
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
 /*CSS for the body */
 body {
   font-family: var(--text-base);
-  background-image: url(./assets/img/backgroud2.jpg);
+  background-image: url(/assets/img/backgroud2.jpg);
   margin: 0px 10px 0px 10px;
   background-size:cover;
   background-repeat: no-repeat;
@@ -61,14 +56,14 @@ body {
 }
 
  /*CSS for index */
-.header{ 
+/* .header{ 
   
   display: flex;
   justify-content: space-around;
   margin-bottom: 6rem;
   align-items: center;
   flex-wrap: wrap;
-}
+} */
 .header h1 {
   color: white;
   font-weight: 500;
@@ -79,7 +74,7 @@ body {
   
 }
 
-.header__nav {
+/* .header__nav {
   width: fit-content;
   height: fit-content;
   padding: 6px;
@@ -87,14 +82,25 @@ body {
   border-radius: 20px;
   font-size: 20px;
   font-weight:bold;
-}
-.header__nav li {
+} */
+/* .header__nav li {
   font-weight: bold;
   font-size: var(--size-s);
   margin-inline: var(--spacing-lg);
-}
+} */
 .header__ul {
   display: flex;
+  justify-content: space-around;
+  padding: 6px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight:bold;
+  margin-left: 20rem;
+}
+.header__ul a {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .header a{
   color:white;
@@ -105,11 +111,22 @@ body {
   background-color:var(--primary);
   font-size: 20px;
   font-weight:bold;
-  padding: 6px 10px 6px 10px;
-  margin-left: 12rem;
+  margin-left: 10px;
+  padding: 6px 8px 6px 8px;
+  
   border-radius: 20px;
 }
+.navbar-collapse{
+  justify-content: space-around;
+}
 
+.navbar-toggler{
+  background-color:var(--primary) ;
+  color: white;
+}
+.navbar-toggler-icon {
+  color: white;
+}
 .header__login a:hover{
   
   transition-duration: 0.3s;
@@ -216,6 +233,30 @@ body {
   max-width: 380px;
 
 }
+
+/* Css for About Us Home */
+.container__aboutUs{
+  background-color: rgb(255, 255, 255,70%);
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.aboutUs {
+  border-style:solid;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 50%);
+}
+.aboutUs h2{
+  color: black;
+  font-size: var(--size-m);
+  font-weight: bolder;
+}
+.aboutUs p {
+  color: black;
+  font-weight: 600;
+}
+
 /* CSS for login */
 .login {
   background-image: url(/assets/img/loginImg2.jpg);
@@ -347,6 +388,12 @@ body {
 
 /*CSS for recipes */
 
+.container__receipes {
+
+
+
+}
+
  .receipes{
   margin: 2rem;
   display: grid;
@@ -373,29 +420,29 @@ body {
   background-size: cover;
 
 }
-.card{
-  width:180px;
+.card__home{
+  /* width:180px; */
   text-align: center;
   background-color: var(--cards);
   border-radius: 20px;
   font-size: var(--size-ss);
   padding-bottom: var(--size-xs);
   backdrop-filter: blur(20px);
-    transform: perspective(500px);
-    transform-style: preserve-3d;
-  
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  left: 15rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .card-custom {
-  border-radius: 2em;
+  border-radius: 20px;
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
-.card__body img{
+.card-custom img{
   border-radius: 20px;
-  opacity: 80%;
+  opacity: 90%;
   cursor: pointer;
-  height: 12rem;
-  width: 100%;
   
 }
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -413,6 +460,7 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px 0px 20px 0px;
+  
 }
 .aboutUs {
   text-decoration: none;
@@ -667,6 +715,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
    }
   
 }
+
 
 @media (max-width: 1000px) {
   .container {

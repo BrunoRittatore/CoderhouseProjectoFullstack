@@ -1,0 +1,22 @@
+@mixin flex ($dir,$fr,$jc,$ai,$gap){
+    display: flex;
+    flex-flow: $dir $fr;
+    justify-content: $jc;
+    align-items : $ai;
+    gap: $gap;
+}
+@mixin flex-direction-row (){
+    display: flex;
+    flex-direction: row;
+
+}
+@mixin flex-direction-colum (){
+    display: flex;
+    flex-direction: colum;
+}
+@mixin margins($mt:0,$mr:0,$mb:0,$ml:0){
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;
+}
