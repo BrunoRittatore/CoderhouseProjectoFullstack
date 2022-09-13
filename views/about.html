@@ -5,29 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="../css/translated.css">
 </head>
 
-<body>
-  <header class="header">
-    <h1>Moraleja</h1>
-    <div class="header__nav">
-      <ul class="header__ul">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./receipes.html">Recepies</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./forum.html">Forum</a></li>
+<body class="min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="6000" data-aos-delay="500">Moraleja</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav header__ul">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../views/receipes.html">Recepies</a></li>
+                    <li><a href="../views/about.html">About Us</a></li>
+                    <li><a href="../views/contact.html">Contact</a></li>
+                    <li><a href="../views/forum.html">Forum</a></li>
+                </div>
+                <nav class="navbar-nav header__login ">
+                    <a href="../views/login.html">Log In / Sign Up</a>
+                </nav>
 
-      </ul>
-    </div>
-    <div class="header__login">
-      <a href="./login.html">Log In / Sign Up</a>
-    </div>
-  </header>
+            </div>
+        </div>
+    </nav>
+</header>
 
   <section>
     <div class="container">
@@ -40,7 +48,7 @@
             donde puedan mostrarlo ante pares que sientan lo mismo.
           </p>
         </div>
-        <img class="aboutUs__img" style="max-width: 60%;" src="/assets/img/aboutUs1.jpg" alt="AboutUs">
+        <img class="aboutUs__img" style="max-width: 60%;" src="../assets/img/aboutUs1.jpg" alt="AboutUs">
       </div>
     </div>
 
@@ -54,13 +62,13 @@
           <br>
           <p>Si estas interesado en ayudar a que esta comunidad se siga <br> desarrollando te puedes contactar en el siguiente <a href="./contact.html" >Link</a></p>
         </div>
-        <img src="/assets/img/aboutUs2.jpg" alt="AboutUs">
+        <img src="../assets/img/aboutUs2.jpg" alt="AboutUs">
       </div>
       
     </div>
   </section>
-  <footer class="footer">
-    <a href="./index.html">HOME</a>
+  <footer class="footer mt-auto">
+    <a href="../index.html">HOME</a>
   </footer>
 </body>
 

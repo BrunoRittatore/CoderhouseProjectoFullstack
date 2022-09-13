@@ -13,28 +13,31 @@ $estilos: (
   border-radius: 20px;
 
 }
-.header h1 {
+header h1 {
     color:map-get($estilos , c );
     font-weight: 500;
     font-size: 45px;
     font-weight: map-get($estilos, fw);
-    @include margins(3px,10rem);
+    @include margins(3px,8rem,0,4rem);
   }
   .header__ul {
     display: flex;
     justify-content: space-around;
     padding: 6px;
-    background-color: var(--primary);
+    background-color: $primary;
     @extend %header;
     margin-left: 20rem;
 
         & a{
             padding-right: map-get($estilos , p );
                 padding-left: map-get($estilos , p );
+                text-decoration: none;
+                color: white;
+               
         }
        & li:hover{
             transition-duration: 0.3s;
-            background-color: var(--alternative);
+            background-color: $alternative;
             border-radius: 15px;
             padding: 3px;
 
@@ -46,12 +49,16 @@ $estilos: (
   }
   
   .header__login{
-    background-color:var(--primary);
+    background-color:$primary;
     font-size: map-get($estilos , fs );
     font-weight:map-get($estilos , fw);
     margin-left: 10px;
     padding: 6px 8px 6px 8px;
     border-radius: map-get($estilos , br);
+    & a{
+      text-decoration: none;
+      color: white;
+    }
                 & a:hover{
                     transition-duration: 0.3s;
                     background-color: var(--alternative);

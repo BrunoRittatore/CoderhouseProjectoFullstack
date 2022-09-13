@@ -2,38 +2,40 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="../css/style.css">
   <title>Moraleja | Log in / Sing on</title>
-  <meta name="keywords" content="sesion,inicio sesion, log out, seguridad">
-  
-
+  <!-- <meta name="keywords" content="sesion,inicio sesion, log out, seguridad"> -->
+  <link rel="stylesheet" href="../css/translated.css">
 </head>
-<body class="login">
-  <main>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg header">
+<body class="login  min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <h1 data-aos="fade-right" data-aos-duration="6000" data-aos-delay="500">Moraleja</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav header__ul">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="./receipes.html">Recepies</a></li>
-              <li><a href="./about.html">About Us</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-              <li><a href="./forum.html">Forum</a></li>
+            <h1 data-aos="fade-right" data-aos-duration="6000" data-aos-delay="500">Moraleja</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav header__ul">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../views/receipes.html">Recepies</a></li>
+                    <li><a href="../views/about.html">About Us</a></li>
+                    <li><a href="../views/contact.html">Contact</a></li>
+                    <li><a href="../views/forum.html">Forum</a></li>
+                </div>
+                <nav class="navbar-nav header__login ">
+                    <a href="./views/login.html">Log In / Sign Up</a>
+                </nav>
             </div>
-            <nav class="navbar-nav header__login ">
-              <a href="./login.html">Log In / Sign Up</a>
-            </nav>
-  
-          </div>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
+  
+  <main>
+   
 <div class="login-form">
   <form>
     <h1>Login</h1>
@@ -53,8 +55,8 @@
   </form>
 </div>
   </main>
-  <footer class="footer" style="bottom: 100%;">
-    <a href="./index.html" >HOME</a>
+  <footer class="footer mt-auto">
+    <a href="../index.html" >HOME</a>
     </footer>
 </body>
 

@@ -3,10 +3,10 @@
 /*Variables*/
 :root{
   /* Pallete */
-  --primary :rgb(229, 152, 128,50%);
-  --secondary: rgb(102, 44,31,80%);
-  --alternative :rgb(229, 152, 128,70%);;
-  --cards : rgb(239, 204, 191,90%);
+  --primary :#e5988080;
+  --secondary: #662c1fcc;
+  --alternative :#e59880b3;;
+  --cards : #efccbfe6;
 
   /* Spacings */
   --spacing-lg : 40px;
@@ -64,14 +64,14 @@ body {
   align-items: center;
   flex-wrap: wrap;
 } */
-.header h1 {
+header h1 {
   color: white;
   font-weight: 500;
   font-size: 45px;
   font-weight: bold;
   margin-top: 3px;
-  margin-right: 10rem;
-  
+  margin-right: 8rem;
+  margin-left: 4rem;
 }
 
 /* .header__nav {
@@ -101,6 +101,8 @@ body {
 .header__ul a {
   padding-right: 10px;
   padding-left: 10px;
+  color: white;
+  text-decoration: none;
 }
 .header a{
   color:white;
@@ -115,6 +117,10 @@ body {
   padding: 6px 8px 6px 8px;
   
   border-radius: 20px;
+}
+.header__login a{
+  text-decoration: none;
+  color: white;
 }
 .navbar-collapse{
   justify-content: space-around;

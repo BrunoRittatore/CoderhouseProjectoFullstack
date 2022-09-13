@@ -1,6 +1,7 @@
 
 /* Inicio Footer */
 .footer {
+    
     display: flex;
     justify-content: center;
     justify-self: end;
@@ -9,8 +10,8 @@
     margin-bottom: 5px; 
     width: 100%;
     text-decoration: none;
-    background-color: var(--secondary);
-    font-size: var(--size-s);
+    background-color: $secondary;
+    font-size: $size-s;
     text-align: center;
     border-radius: 15px;
                        & a{

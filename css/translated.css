@@ -37,28 +37,30 @@ body {
   font-weight: bold;
   border-radius: 20px; }
 
-.header h1 {
+header h1 {
   color: white;
   font-weight: 500;
   font-size: 45px;
   font-weight: bold;
   margin-top: 3px;
-  margin-right: 10rem;
+  margin-right: 8rem;
   margin-bottom: 0;
-  margin-left: 0; }
+  margin-left: 4rem; }
 
 .header__ul {
   display: flex;
   justify-content: space-around;
   padding: 6px;
-  background-color: var(--primary);
+  background-color: #e5988080;
   margin-left: 20rem; }
   .header__ul a {
     padding-right: 10px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    text-decoration: none;
+    color: white; }
   .header__ul li:hover {
     transition-duration: 0.3s;
-    background-color: var(--alternative);
+    background-color: #e59880b3;
     border-radius: 15px;
     padding: 3px; }
 
@@ -67,12 +69,15 @@ body {
   text-decoration: none; }
 
 .header__login {
-  background-color: var(--primary);
+  background-color: #e5988080;
   font-size: 20px;
   font-weight: bold;
   margin-left: 10px;
   padding: 6px 8px 6px 8px;
   border-radius: 20px; }
+  .header__login a {
+    text-decoration: none;
+    color: white; }
   .header__login a:hover {
     transition-duration: 0.3s;
     background-color: var(--alternative);
@@ -99,8 +104,8 @@ body {
   margin-bottom: 5px;
   width: 100%;
   text-decoration: none;
-  background-color: var(--secondary);
-  font-size: var(--size-s);
+  background-color: #662c1fcc;
+  font-size: 20px;
   text-align: center;
   border-radius: 15px; }
   .footer a {
@@ -222,7 +227,7 @@ body {
   margin-top: 5rem;
   margin-bottom: 2rem;
   padding: auto;
-  background-color: #efccbf;
+  background-color: #efccbfe6;
   border-radius: 20px;
   margin-left: 42%;
   margin-right: 42%;
@@ -260,99 +265,12 @@ body {
     font-weight: bold;
     font-size: larger; }
 
-/* CSS for login */
-.login {
-  background-image: url(/assets/img/loginImg2.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  font-family: 'Quicksand', sans-serif;
-  min-height: 100%; }
-
-.login-form {
-  background: #fff;
-  width: 500px;
-  margin: 65px auto;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  border-radius: 4px;
-  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2); }
-  .login-form h1 {
-    padding: 35px 35px 0 35px;
-    font-weight: 300; }
-  .login-form .content {
-    padding: 35px;
-    text-align: center; }
-  .login-form .input-field {
-    padding: 12px 5px; }
-    .login-form .input-field input {
-      font-size: 16px;
-      display: block;
-      font-family: 'Arial', sans-serif;
-      width: 100%;
-      padding: 10px 1px;
-      border: 0;
-      border-bottom: 1px solid #747474;
-      outline: none;
-      -webkit-transition: all .2s;
-      transition: all .2s; }
-      .login-form .input-field input::-webkit-input-placeholder {
-        text-transform: uppercase; }
-      .login-form .input-field input::-moz-placeholder {
-        text-transform: uppercase; }
-      .login-form .input-field input:-ms-input-placeholder {
-        text-transform: uppercase; }
-      .login-form .input-field input::-ms-input-placeholder {
-        text-transform: uppercase; }
-      .login-form .input-field input::placeholder {
-        text-transform: uppercase; }
-      .login-form .input-field input:focus {
-        border-color: #222; }
-  .login-form a.link {
-    text-decoration: none;
-    color: #747474;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-top: 20px;
-    padding: 3px 3px 3px 3px; }
-  .login-form .action {
-    display: -webkit-box;
-    display: flex;
-    flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal; }
-    .login-form .action button {
-      width: 100%;
-      border: none;
-      padding: 18px;
-      font-family: 'Quicksand', sans-serif;
-      cursor: pointer;
-      text-transform: uppercase;
-      background: #e8e9ec;
-      color: #777;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 0;
-      letter-spacing: 0.2px;
-      outline: 0;
-      -webkit-transition: all .3s;
-      transition: all .3s; }
-      .login-form .action button:hover {
-        background: #d8d8d8; }
-      .login-form .action button:nth-child(2) {
-        background: #2d3b55;
-        color: #fff;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 4px; }
-      .login-form .action button:nth-child(2):hover {
-        background: #3c4d6d; }
-
 .contact {
   background-image: url(/assets/img/loginImg.jpg);
-  background-blend-mode: darken; }
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 #fcf-form {
   display: block; }
@@ -364,7 +282,7 @@ body {
   line-height: 3;
   color: white;
   text-align: left;
-  background-color: #e59880;
+  background-color: #e59880b3;
   padding: 30px;
   padding-bottom: 10px;
   border: 1px solid black;
@@ -467,3 +385,106 @@ input[type="submit"].fcf-btn-block,
 input[type="reset"].fcf-btn-block,
 input[type="button"].fcf-btn-block {
   width: 100%; }
+
+/* CSS for login */
+.login {
+  background-image: url(/assets/img/loginImg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100%; }
+
+.login-form {
+  background: #fff;
+  min-width: 500px;
+  min-height: 100%;
+  margin: 65px auto;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: colum;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2); }
+  .login-form h1 {
+    padding: 35px 35px 0 35px;
+    font-weight: bolder; }
+  .login-form .content {
+    padding: 35px;
+    text-align: center; }
+  .login-form .input-field {
+    padding: 15px 5px; }
+    .login-form .input-field input {
+      font-size: 16px;
+      display: block;
+      font-family: 'Arial', sans-serif;
+      width: 100%;
+      padding: 10px 1px;
+      border: 0;
+      border-bottom: 1px solid #747474;
+      outline: none;
+      -webkit-transition: all .2s;
+      transition: all .2s; }
+      .login-form .input-field input::-webkit-input-placeholder {
+        text-transform: uppercase; }
+      .login-form .input-field input::-moz-placeholder {
+        text-transform: uppercase; }
+      .login-form .input-field input:-ms-input-placeholder {
+        text-transform: uppercase; }
+      .login-form .input-field input::-ms-input-placeholder {
+        text-transform: uppercase; }
+      .login-form .input-field input::placeholder {
+        text-transform: uppercase; }
+      .login-form .input-field input:focus {
+        border-color: #222; }
+  .login-form a.link {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bolder;
+    padding: 3px 3px 3px 3px; }
+    .login-form a.link:hover {
+      background-color: #e59880b3;
+      transition-delay: 20ms;
+      transition-duration: 20ms;
+      color: white;
+      border-radius: 20px; }
+  .login-form .action {
+    display: -webkit-box;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; }
+    .login-form .action button {
+      width: 100%;
+      border: none;
+      padding: 18px;
+      font-family: 'Quicksand', sans-serif;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #e8e9ec;
+      color: black;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 0;
+      letter-spacing: 0.2px;
+      outline: 0;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+      .login-form .action button:hover {
+        background: #222;
+        color: #e8e9ec;
+        transition-delay: 20ms; }
+      .login-form .action button:nth-child(2) {
+        background: #2d3b55;
+        color: #fff;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 4px; }
+      .login-form .action button:nth-child(2):hover {
+        background: #3c4d6d; }
