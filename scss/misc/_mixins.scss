@@ -5,12 +5,12 @@
     align-items : $ai;
     gap: $gap;
 }
-@mixin flex-direction-row (){
+@mixin flex-direction-row {
     display: flex;
     flex-direction: row;
 
 }
-@mixin flex-direction-colum (){
+@mixin flex-direction-colum {
     display: flex;
     flex-direction: colum;
 }

@@ -8,18 +8,26 @@
     min-height: 100%;
     
   }
+   
   .login-form {
-    
+    display:flex;
+    flex-direction: row;
     background: #fff;
-    min-width: 500px;
-    min-height: 100%;
-    margin: 65px auto;
-    display: -webkit-box;
-    @include flex-direction-colum;
+     min-width: 500px;
+     max-width :800px;
+     justify-content: center;
+    // min-height: 100%;
+    margin: 65px ;
+    // display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     border-radius: 4px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+
+      form {
+        min-width: 100%;
+        min-height: 100%;
+      }
 
         & h1{
             padding: 35px 35px 0 35px;
