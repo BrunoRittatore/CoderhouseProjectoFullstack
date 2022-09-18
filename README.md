@@ -26,21 +26,21 @@ Explicar en un Doc los cambios realizados en el punto anteriior : "Agreger estas
 
 Fix Notes:
 
--Comprimir todas las imagenes para mejor desempeño de carga.
+-Comprimir todas las imagenes para mejor desempeño de carga. [Not Started]
 -Busqueda nuevas imagenes para la DB y realismo de la web.
--Resideño del carrusel del home junto con el espaciado de la navbar y el dropdown menu cuando es responsive.
--Mejorar formulario de contacto y login.
--Solucionar el footer para que siempre quede fijo abajo
--Hacer la parte de SASS
--Depurar el CSS para eliminar redundancia.
--Mejorar el responsive del home.
--Revisar el responsive del background
--Agregar animaciones segun conveniencia
--Reemplazar la vista de figma por el foro
--Hacer el chart dentro del foro 
--Rediseñar las cartas del index:
+-Resideño del carrusel del home junto con el espaciado de la navbar y el dropdown menu cuando es responsive. [Building]
+-Mejorar formulario de contacto y login. [Building]
+-Solucionar el footer para que siempre quede fijo abajo [Done]
+-Hacer la parte de SASS [Done]
+-Depurar el CSS para eliminar redundancia. [Building]
+-Mejorar el responsive del home. [Analysis]
+-Revisar el responsive del background [Done]
+-Agregar animaciones segun conveniencia [Fix]
+-Reemplazar la vista de figma por el foro [Analysis]
+-Hacer el chart dentro del foro [Analysis]
+-Rediseñar las cartas del index: 
  1:Agregarle rating
  2:El last update
  3:Letra y background
  4:Animación
--Dejar bien maquetado para agregarle las funcionalidades del curso de Js
+-Dejar bien maquetado para agregarle las funcionalidades del curso de Js [In review]

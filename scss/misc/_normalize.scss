@@ -13,7 +13,6 @@
   /* Con esto el carrusel funciona perfecto sin aparecer los puntos*/
   ul{
     list-style-type: none;
-    
   }
   
   /*CSS for the body */
@@ -26,3 +25,6 @@
     background-position:center;
     display: grid;
  }
+  small {
+    font-size: 12px;
+  }
