@@ -96,6 +96,11 @@ header h1 {
   .navbar-toggler-icon {
     color: white; }
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  color: white;
+  background-color: white; }
+
 /* Fin Header */
 /* Inicio Footer */
 .footer {
@@ -175,7 +180,6 @@ header h1 {
   backdrop-filter: blur(20px);
   transform: perspective(500px);
   transform-style: preserve-3d;
-  left: 15rem;
   margin-top: 5rem;
   margin-bottom: 5rem; }
   .card__home img {

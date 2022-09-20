@@ -77,5 +77,10 @@ header h1 {
         color: map-get($estilos , c);
       }
   }
+  [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    color: white;
+    background-color: white;
+}
   
 /* Fin Header */
